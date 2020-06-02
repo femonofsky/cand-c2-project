@@ -2,23 +2,23 @@ Group hierarchy,Region,Service,Upfront,Monthly,First 12 months total,Currency,Co
 My Estimate,US East (N. Virginia),S3 Standard,0,235.52,2826.24,USD,S3 Standard storage (10 TB per month)
 My Estimate,US East (N. Virginia),S3 One Zone - Infrequent Access,0,10.24,122.88,USD,S3 One Zone-IA storage (1 TB per month)
 My Estimate,US East (N. Virginia),S3 Glacier,0,4.1,49.20,USD,S3 Glacier storage (1 TB per month)
-My Estimate,US East (N. Virginia),Data Transfer,0,0,0.00,USD," Inbound (from: Internet) 1 TB per month
- Outbound (to: Amazon Cloud Front) 1 TB per month
- Outbound (to: Not selected) 0 TB per month
+My Estimate,US East (N. Virginia),Data Transfer,0,0,0.00,USD," Inbound (from: Internet) 1 TB per month 
+ Outbound (to: Amazon Cloud Front) 1 TB per month 
+ Outbound (to: Not selected) 0 TB per month 
 "
-My Estimate,US East (N. Virginia),Amazon Virtual Private Cloud (VPC),0,78.93,947.16,USD,Number of NAT Gateways (1)
+My Estimate,US East (N. Virginia),Amazon Virtual Private Cloud (VPC),0,157.86,1894.32,USD,Number of NAT Gateways (2)
 My Estimate,US East (N. Virginia),Amazon EC2,0,848.4,10180.80,USD,"Operating system (Linux), Quantity (20), Storage for each EC2 instance (General Purpose SSD (gp2)), Storage amount (30 GB)"
 My Estimate,US East (N. Virginia),Amazon EC2,0,718.39,8620.68,USD,"Operating system (Linux), Quantity (10), Storage for each EC2 instance (General Purpose SSD (gp2)), Storage amount (30 GB), Instance type (t3a.xlarge)"
-My Estimate,US East (N. Virginia),Amazon RDS for PostgreSQL,0,2926.9,35122.80,USD,"Quantity (1), Storage volume (General Purpose SSD (gp2)), Storage amount (30 GB per month), Instance type (db.r5.4xlarge)"
+My Estimate,US East (N. Virginia),Amazon RDS for PostgreSQL,0,3024.1800000000003,36290.16,USD,"Quantity (1), Storage volume (General Purpose SSD (gp2)), Storage amount (30 GB per month), Instance type (db.r5.4xlarge), Additional backup storage (1 TB)"
 My Estimate,US East (N. Virginia),Elastic Load Balancing,0,500.05,6000.60,USD,Number of Application Load Balancers (2)
 My Estimate,US East (N. Virginia),Amazon Route 53,0,51,612.00,USD,Hosted Zones (2)
+My Estimate,US East (N. Virginia),Amazon Elastic IP,0,102.2,1226.40,USD,"Number of EIPs per instance (4), Number of EC2 instances (4)"
 
 
 
 "AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."
 
 
- brief narrative:
-The RDS was reduced from 2 to 1 instance. This won't the application, cause we can easily scale up the RDS instances.;
+brief narrative
 Ec2 instances(application server) was reduced from 20 Quantities to 10 Quantities. cause we can easily scale up/down in the future depending on the workload;
-The RDS additional backup were decreased to 500 GB per month. This won't affect the application, the idea in the previous estimation were to keep a confortable size;
+The RDS was reduced from 2 to 1 instance. so  we can easily scale down the RDS instances.;
